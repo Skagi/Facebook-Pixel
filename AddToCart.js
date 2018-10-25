@@ -1,3 +1,17 @@
+<script type="text/javascript">
+jQuery('.add-to-basket').click(function() {
+ 	var price = jQuery(this).parents('.product_wrapper').find('span.price').html();
+	price = price.replace(',','.');
+     fbq('track', 'AddToCart',{
+     				currency: "PLN", 
+     				value: parseFloat(price)
+   													}
+   ); 
+});
+</script>
+
+
+
 jQuery('.add-to-basket').click(function() {
  	var price = jQuery(this).parents('.product_wrapper').find('span.price').html();
 	price = price.replace(',','.');
