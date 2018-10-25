@@ -27,3 +27,8 @@ ViewContent (product page)
 AddToCart
 InitiateCheckout
 Purchase
+
+
+
+$('.product-page .product-info form .button button[type="submit"]').click(function(){alert('ryryryryry');});
+$('.product .add button[type="submit"]').click(function(){alert('ryryryryry22');});
